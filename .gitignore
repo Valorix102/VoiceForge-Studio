@@ -1,0 +1,61 @@
+# ───── Logs ─────
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+firebase-debug.log*
+firebase-debug.*.log*
+
+# ───── Firebase Cache & Config ─────
+.firebase/
+.dataconnect
+.firebase-debug.log
+
+# Uncomment this if you want individual Firebase projects
+# .firebaserc
+
+# ───── Runtime Data ─────
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# ───── Compilation/Build ─────
+lib/
+lib/**/*.js
+lib/**/*.js.map
+build/
+dist/
+out/
+.next/
+*.tgz
+
+# ───── TypeScript ─────
+typings/
+.eslintcache
+tsconfig.tsbuildinfo
+
+# ───── Dependency Directories ─────
+node_modules/
+.npm
+bower_components
+
+# ───── Yarn/NPM ─────
+.yarn-integrity
+
+# ───── Environment Variables ─────
+.env
+.env.local
+*.local
+
+# ───── REPL & Misc ─────
+.node_repl_history
+.lock-wscript
+
+# ───── OS / Editor Specific ─────
+.DS_Store
+
+# ───── Vercel/Hosting ─────
+.vercel
+firebase.json
