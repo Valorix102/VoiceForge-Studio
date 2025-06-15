@@ -22,7 +22,7 @@ pids
 *.pid.lock
 
 # ───── Compilation/Build ─────
-lib/
+/lib/
 lib/**/*.js
 lib/**/*.js.map
 build/
@@ -58,4 +58,3 @@ bower_components
 
 # ───── Vercel/Hosting ─────
 .vercel
-firebase.json
