@@ -2,14 +2,11 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { useAuth } from "@/contexts/AuthContext";
-import { Blend, LogIn, LayoutDashboard } from "lucide-react";
+import { Blend, LayoutDashboard } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
 export default function HomePage() {
-  const { user, loading } = useAuth();
-
   return (
     <div className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-br from-background to-blue-100 dark:from-background dark:to-blue-900 p-4">
       <header className="mb-12 text-center">
@@ -36,21 +33,11 @@ export default function HomePage() {
       </main>
 
       <footer className="text-center">
-        {loading ? (
-          <p className="text-muted-foreground">Loading...</p>
-        ) : user ? (
-          <Button asChild size="lg">
-            <Link href="/dashboard">
-              <LayoutDashboard className="mr-2 h-5 w-5" /> Go to Dashboard
-            </Link>
-          </Button>
-        ) : (
-          <Button asChild size="lg">
-            <Link href="/login">
-              <LogIn className="mr-2 h-5 w-5" /> Login / Sign Up
-            </Link>
-          </Button>
-        )}
+        <Button asChild size="lg">
+          <Link href="/dashboard">
+            <LayoutDashboard className="mr-2 h-5 w-5" /> Go to Dashboard
+          </Link>
+        </Button>
         <p className="mt-8 text-sm text-muted-foreground">
           &copy; {new Date().getFullYear()} VoiceForge Studio. All rights reserved.
         </p>
