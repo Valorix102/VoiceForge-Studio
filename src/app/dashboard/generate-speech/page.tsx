@@ -28,8 +28,6 @@ export default async function GenerateSpeechPage() {
   );
 }
 
-src/app/dashboard/generations/page.tsx:
-
 // src/app/dashboard/generations/page.tsx
 import GenerationHistoryItem from "@/components/dashboard/generations/GenerationHistoryItem";
 import { getGenerationHistory, type GenerationResult } from "@/actions/generationActions"; // Mocked action
